@@ -17,6 +17,7 @@ const connection =  mysql.createConnection({
 
 const handleError = (error) => {
     console.error('The app encountered an error', error);
+    connection.end();
 };
 
 const viewDepartments = () => {
