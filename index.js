@@ -7,7 +7,7 @@ const currencyFormatter = new Intl.NumberFormat('en-US', {
     currency: 'USD',
   });
 
-// create the connection, specify bluebird as Promise
+
 const connection =  mysql.createConnection({
     host:'localhost', 
     user: 'root', 
